@@ -63,7 +63,7 @@ class PracticeCaseManager
         $verbs = explode(PHP_EOL, $verbs);
         $verbs = array_slice($verbs, $from, $count);
 
-        return $verbs;
+        return array_filter($verbs);
     }
 
     public function getCases(string $query) : array
